@@ -8,12 +8,14 @@
 </head>
 <body>
     <div id="contenedor">
-        <div class="encabezado">Restaurante Gusteau's</div>
+        <div class="encabezado">Restaurante Gusteau's
+            <img src="./imgs/Gusteaus-Only-Logo_Black.png" alt="">
+        </div>
         <div class="menu">
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="/lmsgi-gusteaus/index.html">Inicio</a></li>
                 <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
-                <li><a href="#menu">Menú</a></li>
+                <li><a href="/lmsgi-gusteaus/menu/index.html">Menú</a></li>
                 <li><a href="#reservas">Reservas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -29,11 +31,37 @@
                 <li>Platos Principales Innovadores</li>
                 <li>Postres Exquisitos</li>
             </ul>
-            <h3>Reservas</h3>
-            <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
+            
             <h3>Contacto</h3>
             <p>¿Preguntas? Contáctenos a través de nuestro formulario en línea o llámenos directamente.</p>
+            <h3>Reservas</h3>
+            <p>Reserve su mesa para una experiencia gastronómica inolvidable. Disfrute de la alta cocina en un ambiente elegante y acogedor.</p>
+            <form id="reserva-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="personas">Número de Personas:</label>
+                <input type="number" id="personas" name="personas" min="1" required>
+
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de Reserva:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="comentarios">Comentarios o Peticiones Especiales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+                <button type="submit">Reservar Mesa</button>
+            </form>
         </div>
+          
         <div class="sidebar">
             <h2>Eventos Especiales</h2>
             <p>Únete a nuestras noches temáticas de vinos y quesos, cenas de degustación exclusivas y eventos culinarios especiales.</p>
@@ -43,7 +71,12 @@
                 <li>Clases de Cocina con Chefs Expertos</li>
             </ul>
         </div>
-        <div class="pie">© 2024 Restaurante Gusteau's - París, Francia</div>
+        <div class="pie">© 2024 Restaurante Gusteau's - París, Francia
+        <br>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Menú</a>
+        <a href="#">Contacto</a>
+    </div>
     </div>
 </body>
 </html>
